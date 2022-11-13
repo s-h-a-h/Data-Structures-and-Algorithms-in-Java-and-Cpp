@@ -34,8 +34,20 @@ int gcd2 (int num1, int num2){
     // Time complexity: O(Log min(a, b))
 }
 
+    int gcd3 (int num1, int num2){
+        if (num2 == 0){
+            return num1;
+        }
+        else{
+            return gcd3(num2, num1 % num2);
+        }
+    // Optimised Euclidean Algorithm
+    }
+
 int main()
 {
     cout << gcd1(18,45) << endl;
     cout << gcd2(18,45) << endl;
+    cout << gcd3(18,45) << endl;
+
 }
