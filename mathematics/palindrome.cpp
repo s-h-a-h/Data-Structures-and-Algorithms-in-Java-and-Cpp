@@ -13,6 +13,7 @@ bool isPalindrome(int numb)
         temp = temp / 10;
     }
     return (reverse == numb);
+    //  Idea: Start flipping it from back side and keep decreasing it until zero.
 }
 
 int main()
